@@ -19,13 +19,11 @@
     "footer footer footer footer";
 }
 
-.header {
-  grid-area: header;
-}
 
 #mainImage {
   max-height: 600px;
 }
+
 /* Cards */
 
 .card-box {
@@ -108,8 +106,9 @@ body,
   grid-area: aboutMain;
   text-align: center;
 }
-#aboutImg {
+aboutImg {
   width: 100%;
+  padding:10px;
 }
 .aboutLeft {
   grid-area: aboutLeft;
