@@ -1,5 +1,4 @@
 * {
-  margin: 0px;
   font-family: "DM Sans", sans-serif;
 }
 
@@ -20,81 +19,63 @@
     "footer footer footer footer";
 }
 
-.header {
-  grid-area: header;
-}
-
-.topBar {
-  display: flex;
-  flex-direction: row;
-  height: 40px;
-  list-style: none;
-  flex-wrap: wrap;
-  justify-content: right;
-  align-items: center;
-}
-
-.menuItem {
-  align-items: center;
-  padding: 0px 10px 0px 10px;
-}
-
-.menuItem a:link,
-.menuItem a:visited {
-  text-decoration: none;
-  color: #a3cef1;
-}
-.menuItem a:active {
-  text-decoration: underline;
-}
-.menuItem a:hover {
-  color: #6096ba;
-}
-
-.homeMain {
-  grid-area: homeMain;
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-}
 
 #mainImage {
-  max-height: 500px;
+  max-height: 600px;
 }
 
-.homeGallerySection {
-  grid-area: homeGallerySection;
-  background-color: #274c77;
-  border-radius: 10px;
-  padding: 30px;
-  margin-left: 20px;
-}
+/* Cards */
 
-.homeBlogSection {
-  grid-area: homeBlogSection;
-  background-color: #274c77;
-  border-radius: 10px;
-  padding: 30px;
-  margin-right: 20px;
-}
-
-.cardContent {
-  color: #f5f749;
-  height: 100%;
+.card-box {
+  color:#6096BA ;
+  background: #A3CEF1;
+  min-height: 200px;
+  position: relative;
+  padding: 30px 30px 20px;
+  margin-bottom: 20px;
+  
   display: flex;
+  margin-top: 20px;
+  -ms-flex-direction: column;
   flex-direction: column;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content:space-evenly;
+  position: relative;
+  cursor: pointer;
+  border-radius: 10px;
 }
 
-.homeGallerySection :hover,
-.homeBlogSection :hover {
-  color: #42213d;
+.card-box:hover {
+  background: linear-gradient(to right, #A3CEF1 0%, #E7ECEF 100%);
 }
-.cardContent h3 {
-  color: #e7ecef;
+
+
+
+.card-title h2 {
+  margin: 0;
+  padding-top: 5%;
+  color: #274C77;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 1;
+  margin-bottom: 15px;
 }
+
+.card-title p {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.card-link a {
+  text-decoration: none;
+  color: #F5F749;
+  font-size: 15px;
+}
+
+
 
 /* Acerca */
 .aboutContainer {
@@ -127,6 +108,7 @@ body,
 }
 #aboutImg {
   width: 100%;
+  padding:10px;
 }
 .aboutLeft {
   grid-area: aboutLeft;
@@ -160,9 +142,11 @@ body,
   height: 100%;
   margin: 0;
 }
-.galleryMain {
+.carruselGaleria {
   grid-area: galleryMain;
   text-align: center;
+  justify-content: center;
+  max-width: 800px;
 }
 .gallery1 {
   grid-area: gallery1;
@@ -187,10 +171,6 @@ body,
   padding: 30px;
 }
 
-.footer {
-  grid-area: footer;
-}
-
 html,
 body,
 .homeContainer {
@@ -199,23 +179,19 @@ body,
 }
 
 /* Footer */
-.footer {
+footer {
   background-color: #42213d;
 }
-.footer a {
+footer a {
   color: #274c77;
   font-weight: bolder;
   padding: 4px;
 }
-.footer a:hover {
+footer a:hover {
   color: #6096ba;
 }
 
 .footerLinks {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding: 15px;
 }
 
@@ -290,33 +266,7 @@ select{
 /* Responsive */
 
 @media (max-width: 480px) {
-  .homeContainer {
-    grid-template-areas:
-      "header header header header"
-      "homeMain homeMain homeMain homeMain"
-      "homeMain homeMain homeMain homeMain"
-      "homeGallerySection homeGallerySection homeGallerySection homeGallerySection"
-      " homeBlogSection  homeBlogSection homeBlogSection homeBlogSection"
-      "footer footer footer footer";
-  }
 
-  .homeGallerySection {
-    padding: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    align-content: center;
-  }
-
-  .homeBlogSection {
-    padding: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    align-content: center;
-  }
-
-  #mainImage {
-    width: 90%;
-  }
   .menuItem {
     font-weight: lighter;
     font-size: 14px;
