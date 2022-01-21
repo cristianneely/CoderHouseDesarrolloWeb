@@ -106,7 +106,7 @@ body,
   grid-area: aboutMain;
   text-align: center;
 }
-aboutImg {
+#aboutImg {
   width: 100%;
   padding:10px;
 }
