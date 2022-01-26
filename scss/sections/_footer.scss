@@ -1,0 +1,16 @@
+footer {
+  background-color: #42213d;
+  a {
+    color: #274c77;
+    font-weight: bolder;
+    padding: 4px;
+    &:hover {
+        color: #6096ba;
+      }
+  }
+  
+}
+
+.footerLinks {
+  padding: 15px;
+}
