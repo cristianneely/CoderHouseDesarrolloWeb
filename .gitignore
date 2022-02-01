@@ -1,1 +1,13 @@
 node_modules
+
+- caso rut para mexico
+- plantilla
+
+
+1600-20000
+
+_____________________
+
+
+
+db.getCollection('Consultations').updateMany({fileStatus:{$type:10}},{$unset:{fileStatus:""}},{multi:true})

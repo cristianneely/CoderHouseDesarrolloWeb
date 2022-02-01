@@ -118,7 +118,8 @@ select {
   max-height: 600px; }
 
 footer {
-  background-color: #42213d; }
+  background-color: #42213d;
+  margin-top: 20px; }
   footer a {
     color: #274c77;
     font-weight: bolder;
