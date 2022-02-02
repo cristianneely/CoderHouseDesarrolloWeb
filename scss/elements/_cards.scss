@@ -1,8 +1,8 @@
 /* Cards */
 
 .card-box {
-  color: #c6ced3;
-  background: #a3cef1;
+  color: map-get($paletaColores,claro);
+  background: map-get($paletaColores,claro);
   min-height: 200px;
   position: relative;
   padding: 30px 30px 20px;
@@ -19,7 +19,7 @@
   cursor: pointer;
   border-radius: 10px;
   &:hover {
-    background: linear-gradient(to right, #a3cef1 0%, #e7ecef 100%);
+    background: linear-gradient(to right, map-get($paletaColores,claro) 0%, map-get($paletaColores,clarisimo) 100%);
   }
 }
 
@@ -27,7 +27,7 @@
     h2 {
         margin: 0;
         padding-top: 5%;
-        color: #274c77;
+        color: map-get($paletaColores,oscuro);
         font-family: "Oswald", sans-serif;
         text-transform: uppercase;
         font-size: 24px;
@@ -44,6 +44,6 @@
 
 .card-link a {
   text-decoration: none;
-  color: #f5f749;
+  color: map-get($paletaColores,amarillo);
   font-size: 15px;
 }

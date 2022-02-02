@@ -1,12 +1,17 @@
 footer {
-  background-color: #42213d;
+  padding-top: 20px;
+  background-color: map-get($paletaColores,clarisimo);
   margin-top:20px;
+  ul{
+    list-style-type: none;
+  }
   a {
-    color: #274c77;
+    text-decoration: none;
+    color: map-get($paletaColores,neutro);;
     font-weight: bolder;
     padding: 4px;
     &:hover {
-        color: #6096ba;
+        color: map-get($paletaColores,claro);
       }
   }
   

@@ -1,7 +1,22 @@
+
+$paletaColores: (
+  oscuro: #274C77,
+  claro: #A3CEF1,
+  neutro:#6096BA,
+  clarisimo : #E7ECEF,
+  amarillo: #F5F749
+);
+
+@mixin maxh($max) {
+  max-height:$max;
+}
+
 * {
     font-family: "DM Sans", sans-serif;
+    color: map-get($paletaColores,oscuro );
   }
-  
+
+
   @import './elements/cards';
   @import './elements/carrousel';
   @import './elements/formulario';

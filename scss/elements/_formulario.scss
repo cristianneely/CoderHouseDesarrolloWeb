@@ -47,7 +47,7 @@
 textarea,
 select {
   box-sizing: border-box;
-  border: 1px solid #6096ba;
+  border: 1px solid map-get($paletaColores,claro );;
   padding: 7px;
   margin: 0px;
   outline: none;
@@ -62,8 +62,8 @@ select {
 .formulario input[type="email"]:focus,
 .formulario textarea:focus,
 .formulario select:focus {
-  -moz-box-shadow: 0 0 8px #6096ba;
-  -webkit-box-shadow: 0 0 8px #6096ba;
-  box-shadow: 0 0 8px #6096ba;
-  border: 1px solid #6096ba;
+  -moz-box-shadow: 0 0 8px map-get($paletaColores,claro );
+  -webkit-box-shadow: 0 0 8px map-get($paletaColores,claro );
+  box-shadow: 0 0 8px map-get($paletaColores,claro );
+  border: 1px solid map-get($paletaColores,claro );
 }
